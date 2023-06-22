@@ -2,51 +2,42 @@ import math
 
 
 def input_x():
-    x = int(input("Nceda ufake uququzelelo x:"))
-    return x
+    return int(input("Nceda ufake uququzelelo x:"))
 
 
 def input_y():
-    y = int(input("Nceda ufake uququzelelo y:"))
-    return y
+    return int(input("Nceda ufake uququzelelo y:"))
 
 
 def input_name():
-    point_name = (input("Nceda ufake igama lendawo :"))
-    return point_name
+    return (input("Nceda ufake igama lendawo :"))
 
 
 def calculate_distance(x, y):
-    x2 = 0
-    y2 = 0
+    temp2 = pow(0, 2)
     temp1 = pow((x - y), 2)
-    temp2 = pow((x2 - y2), 2)
-    result = math.sqrt(temp1 + temp2)
-    return result
+    return math.sqrt(temp1 + temp2)
 
 
 def reflection_x(y):
-    x_ref = (-1) * y
-    return x_ref
+    return (-1) * y
 
 
 def reflection_y(x):
-    y_ref = (-1) * x
-    return y_ref
+    return (-1) * x
 
 
 def quadrant(x, y):
 
     if x > 0 and y > 0:
         quad = " ilele kwikota yokuqala yokuqala, EMTLA MPUMA."
-        if x < 0 and y > 0:
+        if x < 0:
             quad = " ilele kwikota yesibini yesibini, EMTLA MPUMA."
-            if x < 0 and y < 0:
+            if y < 0:
                 quad = " ilele kwikota yesithathu, EMZANTSI NTSHONA."
-                if x > 0 and y < 0:
-                    quad = " ilele kwikota yesine, EMZANTSI MPUMA."
-                    if x == 0 and y == 0:
-                        quad = "ISIPHAMBUKA"
+                quad = " ilele kwikota yesine, EMZANTSI MPUMA."
+                if x == 0 and y == 0:
+                    quad = "ISIPHAMBUKA"
     return quad
 
 
